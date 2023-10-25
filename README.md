@@ -3,8 +3,15 @@
 
 Nh\Example module is responsible for following task.
 1) Create your custom end Point using Rest API and show compare product data in it according to customer wise
-2) Store custom fllowing data in database table 
+URL : {base url}/rest/V1/customer/compare-product 
+Type : POST
+Header : (key:Authorization,value:Bearer {customer token} )
+
+2) Created 'customer rule' admin grid under customer menu for store in database table and added add,update and delete action 
   rule Id, rule Name, frequency, created date
+
+
+3) Added My rule tab under admin edit customer page.
 
 ## Install
 ### Add repository

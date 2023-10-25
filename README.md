@@ -25,6 +25,6 @@ php bin/magento module:enable Nh_Example
 
 
 ### Customer compare product rest API details
-URL : <base url>/rest/V1/customer/compare-product 
+URL : {base url}/rest/V1/customer/compare-product 
 Type : POST
-Header : (key:Authorization,value:Bearer <customer token>)
+Header : (key:Authorization,value:Bearer {customer token} )

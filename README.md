@@ -7,7 +7,7 @@ URL : {base url}/rest/V1/customer/compare-product
 Type : POST
 Header : (key:Authorization,value:Bearer {customer token} )
 
-2) Created 'customer rule' admin grid under customer menu for store in database table and added add,update and delete action 
+2) Created 'customer rule' admin grid under customer menu for store in following fieled to database table and added add,update and delete action 
   rule Id, rule Name, frequency, created date
 
 

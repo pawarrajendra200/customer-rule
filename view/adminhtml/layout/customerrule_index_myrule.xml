@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/layout_generic.xsd">
+    <container name="root" label="Root">
+        <block class="Nh\Example\Block\Adminhtml\Rule\Edit\Tab\View\Rule" name="customer_my_rule"/>
+    </container>
+</layout>

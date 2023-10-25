@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Nh_Example::customer_rule" title="Customer Rules" translate="title" module="Nh_Example" sortOrder="60" parent="Magento_Customer::customer" action="customerrule/index" resource="Nh_Example::customer_rule"/>
+    </menu>
+</config>

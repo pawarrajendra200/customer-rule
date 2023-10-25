@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Nh\Example\Api\Customer\CompareProductInterface" type="Nh\Example\Model\Api\Customer\CompareProduct"/>
+    <type name="Nh\Example\Model\ResourceModel\Rule\Rule\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">customer_rule</argument>
+            <argument name="eventPrefix" xsi:type="string">customer_rule_collection</argument>
+            <argument name="eventObject" xsi:type="string">rule_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Nh\Example\Model\ResourceModel\Rule</argument>
+        </arguments>
+    </type>
+        
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="customer_rule_list_data_source" xsi:type="string">Nh\Example\Model\ResourceModel\Rule\Rule\Collection</item>
+            </argument>
+        </arguments>
+    </type>    
+</config>

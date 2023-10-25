@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="customerrule" frontName="customerrule">
+            <module name="Nh_Example" />
+        </route>
+    </router>
+</config>

@@ -1,0 +1,16 @@
+{
+    "customer_rule": {
+        "column": {
+            "rule_id": true,
+            "customer_id": true,
+            "rule_name": true,
+            "frequency": true,
+            "created_date": true,
+            "updated_date": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CUSTOMER_RULE_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

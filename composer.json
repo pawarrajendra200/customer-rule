@@ -1,0 +1,27 @@
+{
+    "name": "nh/example",
+    "description": "A Magento 2 module that create create your custom end Point using Rest API and show compare product data in it according to customer wise",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "keywords": [
+        "magento 2",
+        "Ninehertz India Pvt. Ltd",
+        "nh",
+        "magento 2 Ninehertz India Pvt. Ltd"
+    ],
+    "authors": [
+        {
+            "name": "Rajendra pawar",
+            "email": "pawarrajendra200@gmail.com",
+            "homepage": "https://theninehertz.com/",
+            "role": "Magento developer"
+        }
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "NH\\Example\\": ""
+        }
+    }
+}

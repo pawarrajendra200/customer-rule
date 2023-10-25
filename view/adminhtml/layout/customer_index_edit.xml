@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_form">            
+             <block class="Nh\Example\Block\Adminhtml\Rule\Edit\Tab\Rule" name="customer_my_rule">
+              <action method="setTabLabel">
+                  <argument name="label" xsi:type="string">My rules</argument>
+                  <argument name="sort_order" xsi:type="number">100</argument>
+              </action>
+            </block>
+        </referenceBlock>    
+    </body>
+</page>

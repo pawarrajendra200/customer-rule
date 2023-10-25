@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Ninehertz India Pvt. Ltd. 
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the theninehertz.com license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ninehertz India Pvt. Ltd.
+ * @package     Nh_Example
+ * @copyright   Copyright (c) Ninehertz India Pvt. Ltd. (https://theninehertz.com/)
+ * @license     -  
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="customer_rule" resource="default" engine="innodb" comment="Customer rule">
+      <column xsi:type="smallint" name="rule_id" padding="6" unsigned="true" nullable="false" identity="true" comment="Rule id" />
+      <column xsi:type="int" name="customer_id" unsigned="true"  nullable="false" identity="false" comment="Customer id" />
+      <column xsi:type="varchar" name="rule_name" nullable="false" length="50" comment="Rule name" />
+      <column xsi:type="varchar" name="frequency" nullable="false" length="50" comment="Frequency" />
+       <column xsi:type="timestamp" name="created_date" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Created date"/>
+        <column xsi:type="timestamp" name="updated_date" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Updated date"/>
+      <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="rule_id" />
+      </constraint>
+      <constraint xsi:type="foreign" referenceId="CUSTOMER_ENTITY_ENTITY_ID_CUSTOMER_RULE_CUSTOMER_ID" table="customer_rule" column="customer_id" referenceTable="customer_entity" referenceColumn="entity_id" />
+   </table>
+</schema>
